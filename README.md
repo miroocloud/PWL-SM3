@@ -1,4 +1,13 @@
 ## Pemrograman Web Lanjut
 
-- Pertemuan 1 - [PBL22092025](/PBL22092025/)
-- Pertemuan 3 - [PBL01102025](/PBL01102025)
+#### Daftar Pertemuan
+- Pertemuan 1 - [PBL20250922](/PBL20250922)
+- Pertemuan 3 - [PBL20251001](/PBL20251001)
+- Pertemuan 4 - Data Handling - [PBL20251008](/PBL20251008)
+
+#### Format Folder
+Setiap pertemuan menggunakan format folder sebagai berikut:
+- **PBLYYYYMMDD**  
+  YYYY = tahun  
+  MM = bulan  
+  DD = tanggal
