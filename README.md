@@ -6,8 +6,7 @@
 - Pertemuan 4 - Data Handling - [PBL20251008](/PBL20251008)
 
 #### Format Folder
-Setiap pertemuan menggunakan format folder sebagai berikut:
-- **PBLYYYYMMDD**  
-  YYYY = tahun  
-  MM = bulan  
+- **PWLYYYYMMDD**
+  YYYY = tahun
+  MM = bulan
   DD = tanggal
