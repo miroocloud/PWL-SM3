@@ -1,9 +1,10 @@
 ## Pemrograman Web Lanjut
 
 #### Daftar Pertemuan
-- Pertemuan 1 - [PBL20250922](/PBL20250922)
-- Pertemuan 3 - [PBL20251001](/PBL20251001)
-- Pertemuan 4 - Data Handling - [PBL20251008](/PBL20251008)
+- Pertemuan 1 - [PWL20250922](/PWL20250922)
+- Pertemuan 3 - [PWL20251001](/PWL20251001)
+- Pertemuan 4 - Data Handling - [PWL20251008](/PWL20251008)
+- Pertemuan 6 - Database Barang - [PWL20251022](/PWL20251022)
 
 #### Format Folder
 - **PWLYYYYMMDD**
