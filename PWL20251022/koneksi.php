@@ -7,9 +7,9 @@ $database = "dbpertemuan6";
 
 try {
     $conn = new PDO(
-        "mysql:host=$srvname;port=$port;dbname=$database",
+        "mysql:host=$srvname;port=$port;dbname=$database;charset=utf8mb4",
         $username,
-        $password,
+        $password
     );
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "conn database success ~";
