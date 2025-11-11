@@ -406,7 +406,6 @@ if (isset($_GET['delete']) && is_numeric($_GET['delete'])) {
     <?php include '../components/scripts.php'; ?>
 
     <script>
-        // Search functionality
         document.getElementById('searchInput').addEventListener('keyup', function() {
             let filter = this.value.toLowerCase();
             let table = document.getElementById('bukuTable');
@@ -425,14 +424,12 @@ if (isset($_GET['delete']) && is_numeric($_GET['delete'])) {
             }
         });
 
-        // Delete confirmation
         function confirmDelete(id, judul) {
             document.getElementById('deleteJudul').textContent = judul;
             document.getElementById('deleteConfirm').href = 'list.php?delete=' + id;
             new bootstrap.Modal(document.getElementById('deleteModal')).show();
         }
 
-        // Auto hide alerts
         setTimeout(function() {
             let alerts = document.querySelectorAll('.alert');
             alerts.forEach(function(alert) {

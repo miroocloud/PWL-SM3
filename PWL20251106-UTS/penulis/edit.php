@@ -376,7 +376,6 @@ switch ($_SERVER['REQUEST_METHOD']) {
     <?php include '../components/scripts.php'; ?>
 
     <script>
-        // Form validation
         document.getElementById('editPenulisForm').addEventListener('submit', function(e) {
             const nama = document.getElementById('nama').value.trim();
 
@@ -387,19 +386,16 @@ switch ($_SERVER['REQUEST_METHOD']) {
                 return false;
             }
 
-            // Confirm update
             if (!confirm('Apakah Anda yakin ingin mengupdate data penulis ini?')) {
                 e.preventDefault();
                 return false;
             }
 
-            // Show loading state
             const submitBtn = this.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
             submitBtn.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Mengupdate...';
             submitBtn.disabled = true;
 
-            // If validation fails, restore button
             setTimeout(() => {
                 if (submitBtn.disabled) {
                     submitBtn.innerHTML = originalText;
@@ -408,7 +404,6 @@ switch ($_SERVER['REQUEST_METHOD']) {
             }, 3000);
         });
 
-        // Auto hide alerts
         setTimeout(function() {
             let alerts = document.querySelectorAll('.alert');
             alerts.forEach(function(alert) {
@@ -418,7 +413,6 @@ switch ($_SERVER['REQUEST_METHOD']) {
             });
         }, 10000);
 
-        // Real-time email validation
         document.getElementById('email').addEventListener('input', function() {
             const email = this.value;
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -432,7 +426,6 @@ switch ($_SERVER['REQUEST_METHOD']) {
             }
         });
 
-        // Character counter for nama
         document.getElementById('nama').addEventListener('input', function() {
             const maxLength = 100;
             const currentLength = this.value.length;
@@ -442,7 +435,6 @@ switch ($_SERVER['REQUEST_METHOD']) {
             }
         });
 
-        // Format phone number
         document.getElementById('telepon').addEventListener('input', function() {
             let value = this.value.replace(/\D/g, '');
             if (value.length > 0 && !value.startsWith('0')) {
@@ -451,7 +443,6 @@ switch ($_SERVER['REQUEST_METHOD']) {
             this.value = value;
         });
 
-        // Highlight changed fields
         const originalData = {
             nama: '<?= htmlspecialchars($penulis['nama']) ?>',
             email: '<?= htmlspecialchars($penulis['email']) ?>',
